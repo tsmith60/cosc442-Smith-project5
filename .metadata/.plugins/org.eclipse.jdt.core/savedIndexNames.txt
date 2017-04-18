@@ -1,18 +1,9 @@
 INDEX VERSION 1.129+/Users/tedsmithiii/Documents/School-Related/Spring-2017/COSC-442-001/Project 5/cosc442-Smith-project5/.metadata/.plugins/org.eclipse.jdt.core
-1873325035.index
-2096620088.index
-185600855.index
-1892242063.index
-2904613641.index
-2502446416.index
-62925260.index
-1271342938.index
-3592926953.index
-2497576214.index
-3609545612.index
-395996804.index
-965360491.index
-382740279.index
-3704923105.index
-2601132907.index
-2713033977.index
+2167434178.index
+3434210609.index
+415885948.index
+3828986850.index
+2916275604.index
+1974627114.index
+1070446819.index
+2153406494.index

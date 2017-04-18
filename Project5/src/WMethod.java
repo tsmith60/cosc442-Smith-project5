@@ -387,6 +387,23 @@ public class WMethod{
      // Example use of the Utilities.runFSM() method
      // Utilities.runFSM(FSM, 1, "a a b a b", " ");
      
+     int  count = 0;
+     while(count < tests.size()){
+    	 int charCount = 1;
+    	 //Separate the test case
+    	 String testCase  = tests.get(count);
+    	 String sep = testCase.substring(0,1);
+    	 
+    	 while(charCount+1 < testCase.length()){
+    		 sep+=" "+testCase.substring(charCount,charCount+1);
+    		 
+    		 charCount++;
+    	 }
+    	 
+    	 Utilities.runFSM(FSM, 1,sep , " ");
+    	 count++;
+     }
+     
    }// End of main()
    
 }//End of class WMethod
