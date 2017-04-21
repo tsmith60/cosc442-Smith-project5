@@ -1,7 +1,7 @@
 Test Generation Using the W-method. V2.0. August 1, 2013
 
-Enter filename: Task1/BookExampleFSM.txt
-FSM input from:  Task1/BookExampleFSM.txt
+Enter filename: BookExampleFSM.txt
+FSM input from:  BookExampleFSM.txt
 States: 5
 Edges 10
 Input alphabet:
@@ -40,6 +40,13 @@ Current state: 1
 FSM execution completed. Final state: 1
 Output pattern:0
 
+FSM execution begins. Input: a Initial state: 1
+Current state: 1
+ Input: a Next state: 1 Output: 0
+
+FSM execution completed. Final state: 1
+Output pattern:0
+
 FSM execution begins. Input: a a Initial state: 1
 Current state: 1
  Input: a Next state: 1 Output: 0
@@ -60,20 +67,7 @@ Current state: 1
 FSM execution completed. Final state: 1
 Output pattern:000
 
-FSM execution begins. Input: a a a a Initial state: 1
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-
-FSM execution completed. Final state: 1
-Output pattern:0000
-
-FSM execution begins. Input: a b a a a Initial state: 1
+FSM execution begins. Input: a b a a Initial state: 1
 Current state: 1
  Input: a Next state: 1 Output: 0
 Current state: 1
@@ -82,11 +76,16 @@ Current state: 4
  Input: a Next state: 3 Output: 1
 Current state: 3
  Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
 
-FSM execution completed. Final state: 2
-Output pattern:01101
+FSM execution completed. Final state: 5
+Output pattern:0110
+
+FSM execution begins. Input: b Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+
+FSM execution completed. Final state: 4
+Output pattern:1
 
 FSM execution begins. Input: b a Initial state: 1
 Current state: 1
@@ -172,28 +171,7 @@ Current state: 1
 FSM execution completed. Final state: 1
 Output pattern:1101000
 
-FSM execution begins. Input: b a a a a a a a Initial state: 1
-Current state: 1
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: a Next state: 3 Output: 1
-Current state: 3
- Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
-Current state: 2
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-
-FSM execution completed. Final state: 1
-Output pattern:11010000
-
-FSM execution begins. Input: b a a a a b a a a Initial state: 1
+FSM execution begins. Input: b a a a a b a a Initial state: 1
 Current state: 1
  Input: b Next state: 4 Output: 1
 Current state: 4
@@ -210,11 +188,24 @@ Current state: 4
  Input: a Next state: 3 Output: 1
 Current state: 3
  Input: a Next state: 5 Output: 0
+
+FSM execution completed. Final state: 5
+Output pattern:11010110
+
+FSM execution begins. Input: b a a a b Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
 Current state: 5
  Input: a Next state: 2 Output: 1
+Current state: 2
+ Input: b Next state: 5 Output: 1
 
-FSM execution completed. Final state: 2
-Output pattern:110101101
+FSM execution completed. Final state: 5
+Output pattern:11011
 
 FSM execution begins. Input: b a a a b a Initial state: 1
 Current state: 1
@@ -252,28 +243,7 @@ Current state: 2
 FSM execution completed. Final state: 1
 Output pattern:1101110
 
-FSM execution begins. Input: b a a a b a a a Initial state: 1
-Current state: 1
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: a Next state: 3 Output: 1
-Current state: 3
- Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
-Current state: 2
- Input: b Next state: 5 Output: 1
-Current state: 5
- Input: a Next state: 2 Output: 1
-Current state: 2
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-
-FSM execution completed. Final state: 1
-Output pattern:11011100
-
-FSM execution begins. Input: b a a a b b a a a Initial state: 1
+FSM execution begins. Input: b a a a b b a a Initial state: 1
 Current state: 1
  Input: b Next state: 4 Output: 1
 Current state: 4
@@ -290,11 +260,22 @@ Current state: 5
  Input: a Next state: 2 Output: 1
 Current state: 2
  Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
 
 FSM execution completed. Final state: 1
-Output pattern:110111100
+Output pattern:11011110
+
+FSM execution begins. Input: b a a b Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: a Next state: 5 Output: 0
+Current state: 5
+ Input: b Next state: 5 Output: 1
+
+FSM execution completed. Final state: 5
+Output pattern:1101
 
 FSM execution begins. Input: b a a b a Initial state: 1
 Current state: 1
@@ -328,26 +309,7 @@ Current state: 2
 FSM execution completed. Final state: 1
 Output pattern:110110
 
-FSM execution begins. Input: b a a b a a a Initial state: 1
-Current state: 1
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: a Next state: 3 Output: 1
-Current state: 3
- Input: a Next state: 5 Output: 0
-Current state: 5
- Input: b Next state: 5 Output: 1
-Current state: 5
- Input: a Next state: 2 Output: 1
-Current state: 2
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-
-FSM execution completed. Final state: 1
-Output pattern:1101100
-
-FSM execution begins. Input: b a a b b a a a Initial state: 1
+FSM execution begins. Input: b a a b b a a Initial state: 1
 Current state: 1
  Input: b Next state: 4 Output: 1
 Current state: 4
@@ -362,11 +324,20 @@ Current state: 5
  Input: a Next state: 2 Output: 1
 Current state: 2
  Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
 
 FSM execution completed. Final state: 1
-Output pattern:11011100
+Output pattern:1101110
+
+FSM execution begins. Input: b a b Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: a Next state: 3 Output: 1
+Current state: 3
+ Input: b Next state: 1 Output: 1
+
+FSM execution completed. Final state: 1
+Output pattern:111
 
 FSM execution begins. Input: b a b a Initial state: 1
 Current state: 1
@@ -396,24 +367,7 @@ Current state: 1
 FSM execution completed. Final state: 1
 Output pattern:11100
 
-FSM execution begins. Input: b a b a a a Initial state: 1
-Current state: 1
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: a Next state: 3 Output: 1
-Current state: 3
- Input: b Next state: 1 Output: 1
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-Current state: 1
- Input: a Next state: 1 Output: 0
-
-FSM execution completed. Final state: 1
-Output pattern:111000
-
-FSM execution begins. Input: b a b b a a a Initial state: 1
+FSM execution begins. Input: b a b b a a Initial state: 1
 Current state: 1
  Input: b Next state: 4 Output: 1
 Current state: 4
@@ -426,11 +380,18 @@ Current state: 4
  Input: a Next state: 3 Output: 1
 Current state: 3
  Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
 
-FSM execution completed. Final state: 2
-Output pattern:1111101
+FSM execution completed. Final state: 5
+Output pattern:111110
+
+FSM execution begins. Input: b b Initial state: 1
+Current state: 1
+ Input: b Next state: 4 Output: 1
+Current state: 4
+ Input: b Next state: 4 Output: 1
+
+FSM execution completed. Final state: 4
+Output pattern:11
 
 FSM execution begins. Input: b b a Initial state: 1
 Current state: 1
@@ -456,22 +417,7 @@ Current state: 3
 FSM execution completed. Final state: 5
 Output pattern:1110
 
-FSM execution begins. Input: b b a a a Initial state: 1
-Current state: 1
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: b Next state: 4 Output: 1
-Current state: 4
- Input: a Next state: 3 Output: 1
-Current state: 3
- Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
-
-FSM execution completed. Final state: 2
-Output pattern:11101
-
-FSM execution begins. Input: b b b a a a Initial state: 1
+FSM execution begins. Input: b b b a a Initial state: 1
 Current state: 1
  Input: b Next state: 4 Output: 1
 Current state: 4
@@ -482,8 +428,6 @@ Current state: 4
  Input: a Next state: 3 Output: 1
 Current state: 3
  Input: a Next state: 5 Output: 0
-Current state: 5
- Input: a Next state: 2 Output: 1
 
-FSM execution completed. Final state: 2
-Output pattern:111101
+FSM execution completed. Final state: 5
+Output pattern:11110

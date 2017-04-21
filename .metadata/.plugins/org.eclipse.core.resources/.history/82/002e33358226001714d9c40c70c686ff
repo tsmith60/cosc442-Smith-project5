@@ -386,7 +386,7 @@ public class WMethod{
      //
      // Example use of the Utilities.runFSM() method
      // Utilities.runFSM(FSM, 1, "a a b a b", " ");
-     // Task 1 and  2
+     /* Task 2
      int  count = 0;
      while(count < tests.size()){
     	 int charCount = 1;
@@ -394,7 +394,7 @@ public class WMethod{
     	 String testCase  = tests.get(count);
     	 String sep = testCase.substring(0,1);
     	 
-    	 while(charCount < testCase.length()){
+    	 while(charCount+1 < testCase.length()){
     		 sep+=" "+testCase.substring(charCount,charCount+1);
     		 
     		 charCount++;
@@ -406,9 +406,7 @@ public class WMethod{
     	 
     	 count++;
      }
-     
-     
-     /* Used for Task 3
+     */
      int  count = 0;
      while(count < tests.size()){
     	 int charCount = 1;
@@ -435,9 +433,9 @@ public class WMethod{
     	 
     	 count++;
      }
-      //The Junit test print out
-   */
-	
+     
+   
+	 //The Junit test print out
    }// End of main()
    
 }//End of class WMethod
