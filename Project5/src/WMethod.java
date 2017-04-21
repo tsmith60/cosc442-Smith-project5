@@ -386,7 +386,7 @@ public class WMethod{
      //
      // Example use of the Utilities.runFSM() method
      // Utilities.runFSM(FSM, 1, "a a b a b", " ");
-     
+     /* Task 2
      int  count = 0;
      while(count < tests.size()){
     	 int charCount = 1;
@@ -400,10 +400,42 @@ public class WMethod{
     		 charCount++;
     	 }
     	 
-    	 Utilities.runFSM(FSM, 1,sep , " ");
+    	 Utilities.runFSM(FSM, 1,sep , " ");//Used for Task1 and Task 2
+    	
+    	 
+    	 
+    	 count++;
+     }
+     */
+     int  count = 0;
+     while(count < tests.size()){
+    	 int charCount = 1;
+    	 //Separate the test case
+    	 String testCase  = tests.get(count);
+    	 String sep = testCase.substring(0,1);
+    	 
+    	 while(charCount < testCase.length()){
+    		 sep+=" "+testCase.substring(charCount,charCount+1);
+    		 
+    		 charCount++;
+    	 }
+    	 
+    	 String temp= Utilities.runFSMTask3(FSM, 1,sep , " ");//Used for Task3
+    	
+    	 System.out.println("@Test"); 
+    	System.out.println("public void testCase" + count + "(){\n"); 
+    	if(temp.contains("yes")){
+    		System.out.println("assertTrue(jBObj.bondRegex(\""+tests.get(count)  + "\"));"); 
+    	}else{
+    		System.out.println("assertFalse(jBObj.bondRegex(\""+tests.get(count)  + "\"));"); 
+    	}
+    	System.out.println("\n}\n"); 
+    	 
     	 count++;
      }
      
+   
+	 //The Junit test print out
    }// End of main()
    
 }//End of class WMethod

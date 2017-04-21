@@ -1,0 +1,13 @@
+
+public class JamesBond {
+
+	public JamesBond(){
+		
+		
+	}
+	public Boolean bondRegex(String input){
+		
+		return false;
+	}
+
+}

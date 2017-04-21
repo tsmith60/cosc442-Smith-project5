@@ -24,3 +24,35 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 
 !ENTRY org.pitest.pitclipse.core 1 0 2017-04-18 15:32:08.880
 !MESSAGE Classpath: [/Users/tedsmithiii/Documents/School-Related/Spring-2017/COSC-442-001/Project 5/cosc442-Smith-project5/Project5/bin, /Applications/Eclipse.app/Contents/Eclipse/plugins/org.pitest.command-line-osgi_1.1.9.jar, /Applications/Eclipse.app/Contents/Eclipse/plugins/org.pitest.html-report-osgi_1.1.9.jar, /Applications/Eclipse.app/Contents/Eclipse/plugins/org.pitest.osgi_1.1.9.jar, /Applications/Eclipse.app/Contents/Eclipse/plugins/org.pitest.pitrunner_1.1.6.201607050705.jar, /Applications/Eclipse.app/Contents/Eclipse/plugins/org.pitest.guava-shade-osgi_18.0.0.jar]
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-19 14:12:24.142
+!MESSAGE StartupPlugin: could not remove workbench property change listener (1) ... workbench might already be shut down.
+!SESSION 2017-04-19 18:50:56.051 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/tedsmithiii/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/tedsmithiii/.eclipse_keyring
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-19 18:51:52.216
+!MESSAGE StartupPlugin: could not add workbench property change listener (1) ... compatibility layer might not be installed.
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-20 06:35:40.899
+!MESSAGE StartupPlugin: could not remove workbench property change listener (1) ... workbench might already be shut down.
+!SESSION 2017-04-20 19:21:46.528 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_92
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/tedsmithiii/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/tedsmithiii/.eclipse_keyring
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-20 19:22:03.654
+!MESSAGE StartupPlugin: could not add workbench property change listener (1) ... compatibility layer might not be installed.
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-21 06:25:11.879
+!MESSAGE cannot support aboutToShutdown event - 2
+
+!ENTRY com.instantiations.eclipse 1 0 2017-04-21 06:33:34.480
+!MESSAGE Compilation unit does not exist: JamesBondTest.java
